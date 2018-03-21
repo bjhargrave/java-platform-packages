@@ -1,0 +1,10 @@
+sudo: false
+
+language: java
+
+jdk:
+  - oraclejdk9
+
+install: ./gradlew --version
+
+script: ./gradlew build run
