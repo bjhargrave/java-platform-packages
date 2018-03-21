@@ -1,4 +1,4 @@
-<h1>Display the Platform Package for Java 9 (or later)</h1>
+<h1>Display the Platform Packages for Java 9 (or later)</h1>
 
 This project is a command line application that will print out the
 exported packages in the boot Module Layer of the Java platform. It
