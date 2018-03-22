@@ -16,6 +16,7 @@ The only thing you need to build is Java 9 or later. We use Gradle to build and 
 includes `gradlew`. You can use your system `gradle`.
 
 `./gradlew build`    - Assembles and tests the project
+
 `./gradlew run`      - Runs the application
 
 The repo includes a `.travis.yml` file to build on Travis CI.
