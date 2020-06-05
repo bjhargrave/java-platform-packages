@@ -37,8 +37,9 @@ public class CalculateJavaPlatformPackages {
 			.map(entry -> entry.getValue()
 				.stream()
 				.sorted()
-				.collect(joining(",\\\n   ", " " + entry.getKey() + ";\\\n  exports:List<String>='\\\n   ", "'")))
-			.collect(joining(",\\\n", "jpms.modules = \\\n", ""));
+				.collect(joining(",\\\n   ", entry.getKey()
+					.concat(";\\\n  exports:List<String>='\\\n   "), "'")))
+			.collect(joining(",\\\n ", "jpms.modules = \\\n ", ""));
 	}
 
 	public static Map<String, Set<String>> modulesExports() {
